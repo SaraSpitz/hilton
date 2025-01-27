@@ -15,5 +15,6 @@ class join_new_user():
     time.sleep(3)
     free_join = driver.find_element(By.LINK_TEXT,"Join for Free")
     free_join.click()
+    # search
 
     join_page.join_new_user("sara","spitz","02-9999999", "02-9999999")

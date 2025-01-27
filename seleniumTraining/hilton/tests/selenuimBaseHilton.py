@@ -5,7 +5,7 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
 # driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-class seleniumBase():
+class seleniumBaseHilton():
 
     def selenium_start(self):
         print("start test")
@@ -13,6 +13,8 @@ class seleniumBase():
         options = Options()
         options.headless = False
         driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+        driver.maximize_window()
+        driver.implicitly_wait(10)
         return driver
 
     def selenium_end(self,driver):

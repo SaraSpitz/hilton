@@ -10,6 +10,7 @@ class joinPage():
     def join_new_user(self, example_first_name, example_last_name, example_index_phone_number,example_phone_number ):
         # join = self.driver.find_element(By.CLASS_NAME,"h-fit")
         # join.click()
+        # print
 
         first_name = self.driver.find_element(By.NAME,"name.firstName")
         first_name.click()
